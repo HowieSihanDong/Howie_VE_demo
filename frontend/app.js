@@ -21,7 +21,7 @@ createApp({
 
             try {
                 // 后端 API 地址
-                const response = await fetch('http://localhost:8000/ask', {
+                const response = await fetch('/ask', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

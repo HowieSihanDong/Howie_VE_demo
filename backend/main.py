@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-import sqlite3
+import mysql.connector
 import os
 import redis
 import json
@@ -25,11 +25,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 2. 数据库文件名
+# 2. MySQL 数据库配置
+DB_CONFIG = {
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': int(os.getenv('DB_PORT', 3306)),
+    'user': os.getenv('DB_USER', 'root'),
+    'password': os.getenv('DB_PASSWORD', ''),
+    'database': os.getenv('DB_NAME', 'demo_db'),
+    'charset': 'utf8mb4'
+}
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_FILE = os.path.join(BASE_DIR, "data", "demo.db")
 FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
-print(f"📌 数据库文件路径: {DB_FILE}")
+print(f"📌 MySQL 数据库配置: {DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}")
 
 # 3. 初始化 Redis 连接
 try:
@@ -46,6 +54,10 @@ mock_cache = {}
 
 class QueryRequest(BaseModel):
     prompt: str
+
+def get_db_connection():
+    """获取 MySQL 数据库连接"""
+    return mysql.connector.connect(**DB_CONFIG)
 
 @app.post("/ask")
 async def ask_ai_and_query(request: QueryRequest):
@@ -88,21 +100,19 @@ async def ask_ai_and_query(request: QueryRequest):
 
     print(f"[最终 SQL] {sql}")
     
-    # 第二步：执行 SQL 并查询本地 SQLite 数据库
+    # 第二步：执行 SQL 并查询 MySQL 数据库
     try:
-        conn = sqlite3.connect(DB_FILE)
-        conn.row_factory = sqlite3.Row
-        cursor = conn.cursor()
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
         cursor.execute(sql)
         rows = cursor.fetchall()
-        data = [dict(row) for row in rows]
         cursor.close()
         conn.close()
         
         return {
             "status": "success",
             "sql": sql,
-            "data": data,
+            "data": rows,
             "cache_hit": cache_hit # 告诉前端是否命中了缓存
         }
     except Exception as e:
