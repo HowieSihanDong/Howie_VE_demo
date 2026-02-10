@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 数据库查询助手 - 专业版</title>
+    <!-- 引入外部 CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Vue 3 脚本 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>📊 AI 短漫剧数据库 NLP2SQL</h1>
+        <p style="text-align: center; color: #666;">输入你想问的问题，比如：“查询张三负责的项目” 或 “查看预算大于20万的项目”</p>
+
+        <div class="input-group">
+            <input 
+                v-model="userQuestion" 
+                @keyup.enter="doQuery"
+                placeholder="请输入你的查询需求..." 
+                type="text"
+            >
+            <button @click="doQuery" :disabled="isLoading">
+                {{ isLoading ? '查询中...' : '提交查询' }}
+            </button>
+        </div>
+
+        <div v-if="generatedSql" class="result-info">
+            <strong>AI 生成的 SQL：</strong> {{ generatedSql }}
+            <span v-if="isCacheHit" class="cache-badge">⚡ Redis 缓存命中 (极速响应)</span>
+        </div>
+
+        <div v-if="errorMessage" class="error">
+            {{ errorMessage }}
+        </div>
+
+        <div v-if="isLoading" class="loading">正在努力从数据库搬运数据...</div>
+
+        <div v-if="results.length > 0" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>架构师</th>
+                        <th>项目名称</th>
+                        <th>行业</th>
+                        <th>技术栈</th>
+                        <th>集数</th>
+                        <th>预算</th>
+                        <th>进度</th>
+                        <th>开始日期</th>
+                        <th>状态</th>
+                        <th>AI工具</th>
+                        <th>评分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in results" :key="item.id">
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.architect_name }}</td>
+                        <td>{{ item.project_name }}</td>
+                        <td>{{ item.client_industry }}</td>
+                        <td>{{ item.tech_stack }}</td>
+                        <td>{{ item.episode_count }}</td>
+                        <td>{{ item.total_budget }}</td>
+                        <td>{{ item.completion_rate }}%</td>
+                        <td>{{ item.start_date }}</td>
+                        <td>{{ item.status }}</td>
+                        <td>{{ item.ai_tools_used }}</td>
+                        <td>{{ item.performance_score }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div v-else-if="!isLoading && generatedSql" style="text-align: center; margin-top: 20px; color: #999;">
+            没有查到相关数据。
+        </div>
+    </div>
+
+    <!-- 引入外部 Vue 逻辑脚本 -->
+    <script src="app.js"></script>
+</body>
+</html>

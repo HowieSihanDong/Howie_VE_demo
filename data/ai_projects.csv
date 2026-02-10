@@ -1,0 +1,103 @@
+id,architect_name,project_name,client_industry,tech_stack,episode_count,total_budget,completion_rate,start_date,end_date,status,ai_tools_used,performance_score
+1,"张三","赛博都市：觉醒","科幻","SD + Midjourney",12,150000.0,100,2023-01-10,2023-03-10,"已交付","Runway Gen-2",9.5
+2,"李四","古风江湖：剑影","武侠","ControlNet + Sora",24,300000.0,80,2023-04-15,2023-08-15,"制作中","Pika Labs",8.8
+3,"周八","AI短漫剧项目_1","武侠","Claude 3.5 + Sora",23,64619.9,41,2023-12-11,2024-03-31,"已交付","Stable Diffusion, GPT-4o, Runway",8.1
+4,"张三","AI短漫剧项目_2","科幻","Sora + Stable Diffusion",50,474577.48,96,2023-10-23,2024-03-27,"制作中","Sora, Midjourney, Stable Diffusion",5.3
+5,"李四","AI短漫剧项目_3","悬疑","Runway + Stable Diffusion",31,114829.28,84,2023-07-01,2023-11-17,"策划中","GPT-4o, Claude 3.5, Pika",6.4
+6,"周八","AI短漫剧项目_4","惊悚","Pika + Runway",23,82186.09,13,2023-04-17,2023-10-10,"策划中","Midjourney, Claude 3.5, GPT-4o",5.5
+7,"张三","AI短漫剧项目_5","科幻","Stable Diffusion + Claude 3.5",5,438285.75,71,2023-06-20,2023-11-24,"制作中","Claude 3.5, GPT-4o, Sora",9.0
+8,"周八","AI短漫剧项目_6","都市","Runway + Claude 3.5",22,426130.81,57,2023-10-25,2024-01-18,"后期中","Stable Diffusion, Sora, Claude 3.5",9.1
+9,"赵六","AI短漫剧项目_7","武侠","Sora + Midjourney",27,114734.91,4,2023-12-10,2024-03-22,"已交付","GPT-4o, Sora, Pika",7.0
+10,"李四","AI短漫剧项目_8","悬疑","Claude 3.5 + Runway",39,326603.99,44,2023-01-11,2023-03-13,"策划中","GPT-4o, Midjourney, Runway",7.8
+11,"李四","AI短漫剧项目_9","治愈","GPT-4o + Claude 3.5",18,76720.41,15,2023-10-19,2024-02-21,"后期中","Pika, Sora, Midjourney",5.9
+12,"吴九","AI短漫剧项目_10","都市","GPT-4o + Sora",39,282143.87,57,2023-11-04,2023-12-26,"已交付","GPT-4o, Pika, Claude 3.5",6.0
+13,"孙七","AI短漫剧项目_11","二次元","Pika + Claude 3.5",25,299739.56,24,2023-06-16,2023-10-23,"已交付","Stable Diffusion, Claude 3.5, Sora",5.4
+14,"孙七","AI短漫剧项目_12","科幻","Pika + Sora",36,84469.89,77,2023-03-28,2023-08-25,"制作中","Midjourney, Stable Diffusion, Sora",5.1
+15,"孙七","AI短漫剧项目_13","科幻","Sora + Midjourney",9,155913.58,51,2023-05-23,2023-11-12,"策划中","Sora, Pika, Claude 3.5",7.1
+16,"张三","AI短漫剧项目_14","武侠","Claude 3.5 + Stable Diffusion",44,399478.06,84,2023-04-23,2023-06-15,"后期中","Claude 3.5, Sora, Midjourney",6.9
+17,"赵六","AI短漫剧项目_15","都市","Midjourney + Stable Diffusion",46,278001.9,12,2023-03-09,2023-06-08,"策划中","GPT-4o, Midjourney, Pika",5.5
+18,"吴九","AI短漫剧项目_16","科幻","Midjourney + Runway",45,452345.71,62,2023-03-29,2023-06-21,"制作中","Midjourney, Claude 3.5, Stable Diffusion",9.8
+19,"周八","AI短漫剧项目_17","武侠","Pika + GPT-4o",8,75049.37,71,2023-12-04,2024-06-01,"制作中","Runway, Stable Diffusion, Claude 3.5",5.4
+20,"张三","AI短漫剧项目_18","悬疑","Sora + Pika",25,167103.68,83,2023-04-11,2023-09-14,"已交付","Claude 3.5, GPT-4o, Pika",7.2
+21,"周八","AI短漫剧项目_19","武侠","Runway + Stable Diffusion",49,241342.15,4,2023-09-26,2023-11-05,"已交付","Runway, Midjourney, Stable Diffusion",9.9
+22,"孙七","AI短漫剧项目_20","惊悚","Runway + Midjourney",10,85974.22,58,2023-10-13,2024-03-13,"已交付","Pika, GPT-4o, Midjourney",6.3
+23,"孙七","AI短漫剧项目_21","悬疑","Midjourney + Runway",32,50799.66,64,2023-08-06,2024-01-22,"制作中","Stable Diffusion, Runway, Pika",8.3
+24,"吴九","AI短漫剧项目_22","悬疑","Claude 3.5 + Runway",24,183084.47,98,2023-11-07,2024-04-26,"已交付","Stable Diffusion, Runway, Midjourney",6.3
+25,"孙七","AI短漫剧项目_23","惊悚","GPT-4o + Claude 3.5",40,309168.18,65,2023-02-25,2023-06-13,"已交付","GPT-4o, Pika, Sora",7.7
+26,"王五","AI短漫剧项目_24","治愈","Claude 3.5 + Pika",40,82193.88,6,2023-11-11,2024-01-05,"后期中","Stable Diffusion, Sora, Claude 3.5",6.2
+27,"周八","AI短漫剧项目_25","都市","Sora + GPT-4o",36,265609.91,64,2023-05-18,2023-10-12,"制作中","Sora, Claude 3.5, Runway",5.9
+28,"周八","AI短漫剧项目_26","惊悚","Pika + Midjourney",48,283255.86,35,2023-04-09,2023-05-28,"已交付","GPT-4o, Midjourney, Claude 3.5",8.5
+29,"张三","AI短漫剧项目_27","都市","Claude 3.5 + Midjourney",24,397197.76,2,2023-09-05,2024-02-27,"后期中","Midjourney, Sora, Claude 3.5",8.5
+30,"李四","AI短漫剧项目_28","悬疑","GPT-4o + Runway",42,376906.85,36,2023-08-05,2023-12-25,"后期中","Claude 3.5, Pika, Runway",6.5
+31,"张三","AI短漫剧项目_29","科幻","Midjourney + Claude 3.5",28,445050.04,24,2023-07-15,2023-11-10,"制作中","Pika, Midjourney, Stable Diffusion",9.7
+32,"赵六","AI短漫剧项目_30","悬疑","Claude 3.5 + Stable Diffusion",10,409828.4,18,2023-07-19,2023-12-02,"策划中","GPT-4o, Stable Diffusion, Pika",8.7
+33,"张三","AI短漫剧项目_31","治愈","Stable Diffusion + Pika",24,150331.71,88,2023-09-03,2024-02-20,"后期中","Pika, Sora, Midjourney",9.7
+34,"张三","AI短漫剧项目_32","都市","Pika + Midjourney",23,79485.23,67,2023-08-25,2024-02-09,"后期中","Midjourney, GPT-4o, Sora",6.0
+35,"孙七","AI短漫剧项目_33","都市","Claude 3.5 + Runway",19,67387.63,8,2023-02-01,2023-05-28,"制作中","Stable Diffusion, Midjourney, GPT-4o",7.0
+36,"王五","AI短漫剧项目_34","武侠","GPT-4o + Sora",23,203041.71,1,2023-10-15,2023-12-15,"后期中","GPT-4o, Pika, Claude 3.5",6.7
+37,"张三","AI短漫剧项目_35","武侠","Claude 3.5 + Pika",34,203268.24,6,2023-09-23,2023-10-27,"已交付","Runway, Pika, Sora",5.5
+38,"孙七","AI短漫剧项目_36","武侠","Midjourney + Claude 3.5",43,229974.05,55,2023-03-21,2023-04-30,"制作中","GPT-4o, Midjourney, Runway",9.4
+39,"王五","AI短漫剧项目_37","二次元","Pika + Runway",40,453540.04,100,2023-02-05,2023-05-29,"策划中","Midjourney, Runway, Claude 3.5",8.7
+40,"李四","AI短漫剧项目_38","科幻","Runway + GPT-4o",11,485032.66,35,2023-12-06,2024-04-22,"策划中","Midjourney, GPT-4o, Runway",6.2
+41,"李四","AI短漫剧项目_39","科幻","GPT-4o + Claude 3.5",49,252698.91,79,2023-06-26,2023-10-03,"已交付","Midjourney, Runway, GPT-4o",9.1
+42,"张三","AI短漫剧项目_40","二次元","Claude 3.5 + Stable Diffusion",36,285194.63,40,2023-09-10,2024-02-27,"策划中","Midjourney, Stable Diffusion, Pika",5.1
+43,"李四","AI短漫剧项目_41","治愈","Midjourney + Sora",25,274265.92,58,2023-08-24,2024-01-18,"后期中","Stable Diffusion, Sora, Runway",8.6
+44,"王五","AI短漫剧项目_42","惊悚","Sora + Runway",42,416218.3,31,2023-12-22,2024-03-09,"已交付","Runway, Claude 3.5, Pika",8.6
+45,"张三","AI短漫剧项目_43","二次元","Pika + Runway",19,484985.26,80,2023-03-19,2023-04-27,"制作中","Runway, Sora, GPT-4o",8.7
+46,"李四","AI短漫剧项目_44","二次元","Claude 3.5 + Sora",39,179318.35,47,2023-04-17,2023-08-27,"后期中","Runway, Midjourney, Sora",5.6
+47,"周八","AI短漫剧项目_45","科幻","Midjourney + Sora",30,150448.61,98,2023-09-01,2023-12-28,"策划中","Midjourney, Sora, GPT-4o",9.3
+48,"吴九","AI短漫剧项目_46","都市","Sora + Claude 3.5",44,272516.26,64,2023-06-08,2023-07-30,"已交付","Claude 3.5, Midjourney, Pika",7.0
+49,"张三","AI短漫剧项目_47","都市","Sora + Claude 3.5",36,300019.82,31,2023-10-12,2024-02-15,"策划中","Pika, GPT-4o, Midjourney",6.5
+50,"周八","AI短漫剧项目_48","都市","Stable Diffusion + Pika",23,491722.46,44,2023-02-01,2023-06-07,"策划中","Sora, GPT-4o, Midjourney",9.6
+51,"赵六","AI短漫剧项目_49","悬疑","GPT-4o + Midjourney",11,97291.03,71,2023-12-12,2024-03-23,"后期中","Runway, Midjourney, Stable Diffusion",7.8
+52,"周八","AI短漫剧项目_50","二次元","Runway + GPT-4o",39,275729.09,20,2023-01-13,2023-06-14,"制作中","Midjourney, Claude 3.5, Pika",9.3
+53,"孙七","AI短漫剧项目_51","治愈","Claude 3.5 + Pika",21,296642.29,86,2023-12-05,2024-05-21,"策划中","Midjourney, Pika, Stable Diffusion",8.5
+54,"赵六","AI短漫剧项目_52","武侠","GPT-4o + Sora",10,268056.05,3,2023-06-30,2023-10-03,"策划中","Midjourney, Sora, GPT-4o",7.7
+55,"张三","AI短漫剧项目_53","悬疑","Sora + Midjourney",23,475836.0,8,2023-09-01,2024-02-22,"制作中","Pika, GPT-4o, Stable Diffusion",8.1
+56,"周八","AI短漫剧项目_54","惊悚","GPT-4o + Runway",20,247753.35,45,2023-11-17,2024-05-08,"制作中","Runway, Stable Diffusion, GPT-4o",7.3
+57,"吴九","AI短漫剧项目_55","悬疑","Pika + GPT-4o",30,69515.34,74,2023-12-04,2024-04-23,"后期中","Sora, Midjourney, GPT-4o",5.5
+58,"吴九","AI短漫剧项目_56","治愈","Stable Diffusion + Claude 3.5",33,119052.07,84,2023-10-08,2023-11-30,"后期中","Sora, Runway, Pika",6.7
+59,"王五","AI短漫剧项目_57","科幻","Sora + Pika",34,184462.84,78,2023-05-08,2023-09-06,"后期中","Midjourney, Pika, Runway",6.5
+60,"张三","AI短漫剧项目_58","武侠","Stable Diffusion + Pika",23,151060.87,13,2023-05-21,2023-09-05,"策划中","Runway, Sora, Midjourney",8.5
+61,"周八","AI短漫剧项目_59","武侠","Sora + Stable Diffusion",22,358034.52,92,2023-10-06,2024-01-28,"制作中","Midjourney, Claude 3.5, Sora",9.7
+62,"王五","AI短漫剧项目_60","武侠","Runway + Sora",21,307905.96,7,2023-11-27,2024-05-01,"已交付","Sora, Pika, Claude 3.5",5.4
+63,"周八","AI短漫剧项目_61","治愈","Pika + Runway",23,94258.41,84,2023-07-26,2023-12-19,"制作中","GPT-4o, Stable Diffusion, Claude 3.5",6.6
+64,"孙七","AI短漫剧项目_62","科幻","Claude 3.5 + Pika",34,386270.14,12,2023-07-08,2023-12-27,"已交付","Claude 3.5, Midjourney, GPT-4o",5.6
+65,"张三","AI短漫剧项目_63","惊悚","Sora + Stable Diffusion",12,384264.59,56,2023-01-28,2023-04-21,"后期中","Stable Diffusion, Claude 3.5, Pika",7.9
+66,"周八","AI短漫剧项目_64","武侠","Runway + Midjourney",37,168243.56,34,2023-02-26,2023-08-25,"已交付","Midjourney, Runway, Claude 3.5",8.2
+67,"周八","AI短漫剧项目_65","治愈","Runway + Claude 3.5",45,355655.99,78,2023-12-23,2024-05-17,"后期中","Stable Diffusion, Runway, Claude 3.5",5.9
+68,"吴九","AI短漫剧项目_66","悬疑","Runway + Sora",6,430816.86,23,2023-10-02,2023-12-17,"已交付","Runway, GPT-4o, Claude 3.5",7.1
+69,"王五","AI短漫剧项目_67","武侠","Midjourney + Sora",18,162537.72,59,2023-12-04,2024-05-18,"后期中","Runway, Sora, Pika",8.1
+70,"张三","AI短漫剧项目_68","都市","Runway + Sora",24,323034.38,65,2023-04-04,2023-06-26,"已交付","GPT-4o, Stable Diffusion, Pika",6.1
+71,"李四","AI短漫剧项目_69","二次元","Runway + Midjourney",35,271180.59,65,2023-12-22,2024-03-18,"后期中","GPT-4o, Runway, Midjourney",6.4
+72,"赵六","AI短漫剧项目_70","都市","Stable Diffusion + Midjourney",45,337095.69,2,2023-06-06,2023-12-02,"后期中","Midjourney, GPT-4o, Stable Diffusion",9.2
+73,"吴九","AI短漫剧项目_71","科幻","Pika + Claude 3.5",30,257518.15,26,2023-04-04,2023-07-30,"制作中","Midjourney, Sora, Stable Diffusion",9.3
+74,"周八","AI短漫剧项目_72","二次元","Sora + GPT-4o",5,210127.93,71,2023-09-09,2024-02-12,"已交付","Stable Diffusion, GPT-4o, Midjourney",8.7
+75,"张三","AI短漫剧项目_73","科幻","Pika + Stable Diffusion",5,115381.85,22,2023-07-12,2023-11-06,"策划中","Stable Diffusion, Midjourney, Claude 3.5",5.9
+76,"赵六","AI短漫剧项目_74","科幻","Midjourney + Runway",5,499359.72,36,2023-10-22,2024-02-19,"后期中","Midjourney, Pika, GPT-4o",8.0
+77,"周八","AI短漫剧项目_75","武侠","Sora + Stable Diffusion",45,71286.49,69,2023-01-29,2023-04-29,"已交付","Runway, Claude 3.5, Pika",9.4
+78,"孙七","AI短漫剧项目_76","悬疑","Stable Diffusion + Runway",42,294613.33,77,2023-04-08,2023-06-08,"制作中","Runway, GPT-4o, Pika",8.6
+79,"王五","AI短漫剧项目_77","二次元","Sora + Claude 3.5",6,122248.6,83,2023-10-22,2023-12-07,"制作中","Midjourney, Claude 3.5, GPT-4o",8.5
+80,"孙七","AI短漫剧项目_78","武侠","Claude 3.5 + Midjourney",28,436099.7,55,2023-08-09,2023-10-17,"制作中","Sora, Runway, Midjourney",8.5
+81,"李四","AI短漫剧项目_79","科幻","GPT-4o + Pika",14,399078.06,14,2023-12-05,2024-03-13,"制作中","Midjourney, Stable Diffusion, Claude 3.5",6.0
+82,"赵六","AI短漫剧项目_80","二次元","Claude 3.5 + Stable Diffusion",43,252680.67,46,2023-11-03,2023-12-21,"已交付","Pika, Claude 3.5, Midjourney",8.7
+83,"李四","AI短漫剧项目_81","二次元","Sora + Claude 3.5",29,292670.9,37,2023-12-01,2024-03-04,"制作中","Stable Diffusion, GPT-4o, Runway",8.1
+84,"王五","AI短漫剧项目_82","治愈","GPT-4o + Runway",16,104826.64,69,2023-04-13,2023-10-08,"制作中","Stable Diffusion, GPT-4o, Claude 3.5",9.3
+85,"吴九","AI短漫剧项目_83","治愈","Runway + Stable Diffusion",17,294877.46,71,2023-12-16,2024-02-23,"策划中","GPT-4o, Runway, Sora",5.5
+86,"周八","AI短漫剧项目_84","悬疑","Claude 3.5 + Midjourney",34,493853.36,34,2023-08-16,2023-11-13,"策划中","Claude 3.5, Runway, Pika",9.4
+87,"周八","AI短漫剧项目_85","都市","Stable Diffusion + Claude 3.5",50,93943.16,49,2023-05-17,2023-10-24,"策划中","Sora, Pika, Stable Diffusion",6.7
+88,"赵六","AI短漫剧项目_86","治愈","GPT-4o + Stable Diffusion",33,438431.01,95,2023-04-07,2023-07-21,"制作中","Sora, Stable Diffusion, Claude 3.5",8.9
+89,"张三","AI短漫剧项目_87","悬疑","Midjourney + Sora",12,377556.19,68,2023-10-26,2024-03-05,"已交付","Stable Diffusion, Claude 3.5, GPT-4o",6.4
+90,"张三","AI短漫剧项目_88","科幻","Midjourney + Claude 3.5",35,194226.99,28,2023-07-11,2023-10-10,"制作中","Pika, Runway, Midjourney",5.4
+91,"孙七","AI短漫剧项目_89","都市","Stable Diffusion + Midjourney",13,245736.62,8,2023-03-02,2023-06-10,"后期中","GPT-4o, Stable Diffusion, Claude 3.5",10.0
+92,"赵六","AI短漫剧项目_90","科幻","Pika + GPT-4o",26,488448.43,98,2023-07-01,2023-11-28,"后期中","Claude 3.5, Runway, Midjourney",7.7
+93,"周八","AI短漫剧项目_91","都市","GPT-4o + Runway",21,89261.29,67,2023-05-01,2023-10-02,"策划中","Pika, Sora, Runway",7.8
+94,"孙七","AI短漫剧项目_92","科幻","Sora + Stable Diffusion",39,280936.2,57,2023-09-19,2024-03-04,"已交付","GPT-4o, Midjourney, Pika",6.8
+95,"李四","AI短漫剧项目_93","二次元","Stable Diffusion + Midjourney",17,81013.38,5,2023-05-14,2023-08-10,"后期中","Runway, Midjourney, GPT-4o",8.8
+96,"李四","AI短漫剧项目_94","悬疑","GPT-4o + Sora",15,296599.26,36,2023-09-07,2023-12-07,"制作中","GPT-4o, Pika, Claude 3.5",7.0
+97,"周八","AI短漫剧项目_95","惊悚","Pika + Sora",36,195742.19,32,2023-10-12,2024-01-15,"后期中","Midjourney, Pika, Claude 3.5",8.5
+98,"王五","AI短漫剧项目_96","悬疑","Midjourney + Claude 3.5",8,212195.26,60,2023-01-09,2023-05-20,"后期中","Sora, Midjourney, Claude 3.5",7.5
+99,"周八","AI短漫剧项目_97","二次元","Runway + Midjourney",45,185708.52,23,2023-05-04,2023-10-08,"已交付","Stable Diffusion, Pika, GPT-4o",8.7
+100,"吴九","AI短漫剧项目_98","惊悚","Stable Diffusion + Claude 3.5",29,62580.44,100,2023-12-09,2024-05-05,"已交付","Stable Diffusion, Claude 3.5, GPT-4o",9.1
+101,"王五","AI短漫剧项目_99","二次元","Pika + Midjourney",46,443286.51,30,2023-06-03,2023-08-10,"后期中","Claude 3.5, Sora, Stable Diffusion",9.0
+102,"吴九","AI短漫剧项目_100","治愈","Claude 3.5 + Sora",24,435751.75,24,2023-05-18,2023-08-06,"策划中","Pika, Stable Diffusion, Midjourney",7.1

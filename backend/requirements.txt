@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+mysql-connector-python
+requests
+pydantic
+openai
+python-dotenv
+volcengine-python-sdk[ark]
+redis
