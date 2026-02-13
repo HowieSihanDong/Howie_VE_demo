@@ -229,16 +229,6 @@ def direct_sql():
             'count': len(results)
         })
 
-def clean_input(text):
-    """清理输入中的特殊字符（如方向键转义序列）"""
-    import re
-    # 移除 ANSI 转义序列
-    ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
-    text = ansi_escape.sub('', text)
-    # 移除其他控制字符
-    text = ''.join(char for char in text if ord(char) >= 32 or char == '\n')
-    return text.strip()
-
 def main():
     """主程序"""
     show_help()
@@ -263,9 +253,8 @@ def main():
     
     while True:
         try:
-            # 获取用户输入并清理
-            user_input = input("\n💬  请输入查询 (或 /help 查看帮助): ")
-            user_input = clean_input(user_input)
+            # 获取用户输入
+            user_input = input("\n💬  请输入查询 (或 /help 查看帮助): ").strip()
             
             if not user_input:
                 continue
