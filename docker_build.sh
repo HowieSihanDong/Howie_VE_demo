@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # 镜像仓库配置
-REGISTRY="howiesql-cn-beijing.cr.volces.com"
+REGISTRY="wangfan-vaps-test-cr-cn-beijing2.cr.volces.com"
 NAMESPACE="howie_sql"
-IMAGE_NAME="howie1"
+IMAGE_NAME="howiesql"
 VERSION="v1.0.0"
 
 FULL_IMAGE="${REGISTRY}/${NAMESPACE}/${IMAGE_NAME}:${VERSION}"
