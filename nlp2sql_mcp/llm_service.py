@@ -2,14 +2,13 @@ import os
 from volcenginesdkarkruntime import Ark
 import re
 
-from dotenv import load_dotenv  # 确保 python-dotenv 在 requirements.txt 中
-
-# 加载本地 .env 文件，仅在本地调试时生效
-load_dotenv()
-
 # 延迟初始化的客户端
 _client = None
 
+if os.getenv("VEFAAS_ENV") is None:
+    load_dotenv()
+
+    
 def get_client():
     """延迟初始化 Ark 客户端，确保环境变量已加载"""
     global _client

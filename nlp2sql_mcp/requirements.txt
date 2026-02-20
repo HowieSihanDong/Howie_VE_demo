@@ -1,0 +1,6 @@
+# requirements.txt 完整内容
+fastapi>=0.104.1
+uvicorn>=0.24.0
+python-dotenv>=1.0.0
+volcenginesdkarkruntime>=1.0.0  # 新增：火山方舟SDK
+requests>=2.31.0  # 可选：方舟SDK依赖，建议加上
