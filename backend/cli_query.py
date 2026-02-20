@@ -27,18 +27,37 @@ DB_CONFIG = {
     'charset': 'utf8mb4'
 }
 
-# Redis 配置
+# Redis 配置（适配火山引擎私网 Redis，支持用户名+密码）
 def get_redis_client():
-    """获取 Redis 连接"""
+    """获取 Redis 连接（适配火山引擎私网+账号密码认证）"""
     try:
+        # 从环境变量读取完整配置
+        redis_host = os.getenv('REDIS_HOST', 'localhost')
+        redis_port = int(os.getenv('REDIS_PORT', 6379))
+        redis_user = os.getenv('REDIS_USER', 'default')  # 新增：Redis 用户名
+        redis_password = os.getenv('REDIS_PASSWORD', '')
+        redis_db = int(os.getenv('REDIS_DB', 0))
+        
+        # 创建 Redis 客户端（支持用户名+密码，增加超时配置）
         client = redis.Redis(
-            host=os.getenv('REDIS_HOST', 'localhost'),
-            port=int(os.getenv('REDIS_PORT', 6379)),
-            db=int(os.getenv('REDIS_DB', 0)),
-            decode_responses=True
+            host=redis_host,
+            port=redis_port,
+            username=redis_user,  # 新增：指定用户名
+            password=redis_password,
+            db=redis_db,
+            decode_responses=True,
+            socket_timeout=10,    # 私网连接超时
+            retry_on_timeout=True # 超时重试
         )
-        client.ping()
+        client.ping()  # 测试连接
+        print(f"✅  Redis 私网连接成功: {redis_host}:{redis_port}")
         return client
+    except redis.exceptions.AuthenticationError:
+        print(f"⚠️  Redis 认证失败: 用户名/密码错误，请检查配置")
+        return None
+    except redis.exceptions.ConnectionError:
+        print(f"⚠️  Redis 连接失败: 请检查网络/白名单/VPC")
+        return None
     except Exception as e:
         print(f"⚠️  Redis 未连接: {e}")
         return None
@@ -242,12 +261,8 @@ def main():
         print("❌  MySQL 连接失败，请检查配置")
         return
     
-    # 测试 Redis
-    redis_client = get_redis_client()
-    if redis_client:
-        print("✅  Redis 连接成功!")
-    else:
-        print("⚠️   Redis 未连接，将使用内存缓存")
+    # 测试 Redis（这里调用 get_redis_client 会自动打印连接状态）
+    get_redis_client()
     
     print("\n" + "="*60)
     
