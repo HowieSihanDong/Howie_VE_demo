@@ -45,6 +45,7 @@ try:
     # 从 .env 读取 Redis 配置
     redis_host = os.getenv('REDIS_HOST', 'localhost')
     redis_port = int(os.getenv('REDIS_PORT', 6379))
+    redis_user = os.getenv('REDIS_USER', 'default')  # 新增这行
     redis_password = os.getenv('REDIS_PASSWORD', '')
     redis_db = int(os.getenv('REDIS_DB', 0))
     
@@ -52,6 +53,7 @@ try:
     redis_client = redis.Redis(
         host=redis_host,
         port=redis_port,
+        username=redis_user,  # 新增这行
         password=redis_password,
         db=redis_db,
         decode_responses=True,  # 自动解码为字符串
